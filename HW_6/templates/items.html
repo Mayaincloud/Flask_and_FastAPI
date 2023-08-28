@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item - {{ items }}</title>
+</head>
+<body>
+    {% for item in items %}
+    <div>
+       id={{ item.id }}
+        title={{ item.title }}
+        descriptions={{ item.description }}
+        price={{ item.price }}
+    </div>
+    {% endfor %}
+</body>
+</html>
